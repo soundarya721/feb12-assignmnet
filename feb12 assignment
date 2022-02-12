@@ -1,0 +1,22 @@
+a=int(input('item1:'))
+b=int(input('item2:'))
+c=int(input('item3:'))
+d=int(input('item4:'))
+e=int(input('item5:'))
+sum=a+b+c+d+e
+if(sum>5000):
+    dis=sum*10/100
+elif(sum>3000):
+    dis=sum*8/100
+elif(sum>2000):
+    dis=sum*5/100
+elif(sum>1000):
+    dis=sum*3/1000
+else:
+    dis=0
+if(sum>3000):
+    tax=sum*18/100
+else:
+    tax=sum*10/100
+bill=sum+tax-dis
+print(bill)
